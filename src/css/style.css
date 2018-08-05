@@ -88,3 +88,31 @@ body {
   height: 48%;
 }
 
+#input_add_list {
+  width: 83%;
+  margin-left: 2%;
+  background-color: #E1E5E9;
+  border-radius: 5%;
+  display: none;
+  margin-top: 16%;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+#formGroupExampleInput {
+  margin-bottom: 2%;
+}
+
+#btn_guardar {
+  margin-left: 1%;
+  margin-bottom: 1%;
+  height: 35px;
+  text-align: center;
+}
+
+.fa-times {
+  color: #919294;
+  margin-left: 5%;
+}
+
