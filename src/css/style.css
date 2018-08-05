@@ -1,0 +1,48 @@
+html {
+  height: auto;
+  width: auto;
+}
+
+body {
+  height: auto;
+  width: auto;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.barra_superior {
+  background-color: rgb(0, 104, 164);
+}
+
+.btns_barra {
+  background-color: #7EAECC;
+  height: 35px;
+}
+
+#btn_tablero {
+  margin-left: 0.3%;
+  margin-top: 0.2%;
+  margin-bottom: 0.2%;
+  font-size: 93%;
+}
+
+.fa-trello {
+  font-size: 18px;
+}
+
+#btn_search {
+  margin: 0.2%;
+  width: 13%;
+}
+
+#title_trello {
+  font-family: 'Sriracha', cursive;
+  font-size: 23px;
+  color: #7EAECC;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-search {
+  float: right;
+  font-size: 93%;
+}
