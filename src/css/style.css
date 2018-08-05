@@ -7,6 +7,7 @@ body {
   height: auto;
   width: auto;
   font-family: 'PT Sans', sans-serif;
+  background-color: #0079BE;
 }
 
 .barra_superior {
@@ -57,3 +58,33 @@ body {
   margin-left: 0.2%;
   width: 37px;
 }
+
+#btn_bell {
+  margin-top: 0.2%;
+  margin-left: 0.2%;
+  width: 37px;
+}
+
+#btn_perfil {
+  border-radius: 70%;
+  margin-top: 0.2%;
+  margin-left: 0.2%;
+  margin-right: 0.2%;
+  width: 37px;
+}
+
+.div_add_list {
+  margin-left: 0%;
+  padding-left: 0%;
+}
+
+#btn_add_list {
+  background-color: #066AA8;
+  width: 83%;
+  margin-left: 2%;
+  color: #81C2E8;
+  text-align: left;
+  margin-top: 16%;
+  height: 48%;
+}
+
