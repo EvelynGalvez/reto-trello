@@ -15,4 +15,6 @@ btn_guardar.addEventListener('click', () => {
   close_icon.style.display = 'none';
   document.getElementById('container_task').style.display = 'block';
   document.getElementById('list_name').innerHTML = listName;
+  document.getElementById('container_textarea').style.display = 'block';
+  document.getElementById('add_task').style.display = 'none';
 })
