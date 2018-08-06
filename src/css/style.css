@@ -130,11 +130,14 @@ body {
   color: #919294;
 }
 
-#container_textarea {
-  display: none;
-}
-
-#textarea_tarea {
+#task {
   width: 100%;
 }
+
+#cajaText {
+  border: 1px solid black;
+}
+
+
+
 
