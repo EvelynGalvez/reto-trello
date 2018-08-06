@@ -116,3 +116,7 @@ body {
   margin-left: 5%;
 }
 
+#container_task {
+  display: none;
+  margin-bottom: 2%;
+}
