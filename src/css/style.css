@@ -119,4 +119,15 @@ body {
 #container_task {
   display: none;
   margin-bottom: 2%;
+  padding: 2%;
 }
+
+#list_name {
+  margin-bottom: 8%;
+}
+
+#add_task {
+  color: #919294;
+}
+
+
