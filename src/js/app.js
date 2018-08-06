@@ -1,3 +1,3 @@
 function focus (task) {
-  document.getElementById('textarea_tarea').focus();
+  document.getElementById('task').focus();
 }
