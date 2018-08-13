@@ -23,27 +23,22 @@
       <button id="btn_bell" type="button" class="btn btn-primary btns_barra"><i class="far fa-bell"></i></button>
       <button id="btn_perfil" type="button" class="btn btn-primary btns_barra"></button>
     </div>
-    <div class="row tarjetas">
-      <div class="div_add_list col-3">
-        <button id="btn_add_list" type="button" class="btn btn-primary">Añadir una lista...</button>
-        <form>
-            <div id="input_add_list" class="form-group">
-              <div id="container_list">
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Introduzca el título de la lista...">
-                <button id="btn_guardar" type="button" class="btn btn-success">Añadir lista</button>
+    <div class="row barra_proyecto">
+      <a class="tituloTablero links" href="#">Título de tablero</a>
+      <i class="far fa-star"></i>
+      <a class="proyecto3 links" href="#">Proyecto 3</a>
+      <i class="fas fa-lock privado">&nbsp Privado</i>
+    </div>
+    <div id="contenedor" class="row">
+    
+      <div id="containerList" class="containerList">
+        <button id="btn_add_a_list" type="button" class="btnAddAList btn btn-primary"><i class="fas fa-plus"></i>&nbsp Añada una lista...</button>
+            
+              <div id="container_form" class="containerForm">
+                <input type="text" class="form-control" id="listTitle" placeholder="Introduzca el título de la lista...">
+                <button id="btnAddList" type="button" class="btnAddList btn btn-success">Añadir lista</button>
                 <i id="close_icon" class="fas fa-times"></i>
-              </div>
-              <div id="container_task">             
-                <div id="list_name"></div>
-                <div id="list_task"></div>
-                <a id="add_task" href="#"><i class="fas fa-plus"></i>&nbspAñadir una tarea</a>
-                <div id="container_textarea">
-                  <textarea id="task" placeholder="Introduzca un título para esta tarjeta..."></textarea>
-                  <button id="btn_añadir" type="button" class="btn btn-success">Añadir</button>
-                </div>
-              </div>
-            </div>
-        </form>
+              </div>          
       </div>
     </div>
   </div>

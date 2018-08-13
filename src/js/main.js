@@ -1,39 +1,81 @@
-const btn_add_list = document.getElementById('btn_add_list');
+const btn_add_a_list = document.getElementById('btn_add_a_list');
 
-btn_add_list.addEventListener('click', () => {
-  btn_add_list.style.display = 'none';
-  input_add_list.style.display = 'block';
-  container_task.style.display = 'none';
+btn_add_a_list.addEventListener('click', () => {
+  btn_add_a_list.style.display = 'none';
+  container_form.style.display = 'block';
+
+  // Para cerrar formulario de título lista
+  close_icon.addEventListener('click', () => {
+    container_form.style.display = 'none';
+    btn_add_a_list.style.display = 'block';
+  })
 })
 
-const btn_guardar = document.getElementById('btn_guardar');
+const btnAddList = document.getElementById('btnAddList');
 
-btn_guardar.addEventListener('click', () => {
-  let listName = document.getElementById('formGroupExampleInput').value;
-  container_list.style.display = 'none';
-  container_task.style.display = 'block';
-  list_task.style.display = 'none';
-  list_name.innerHTML = listName;
-  container_textarea.style.display = 'none';
+btnAddList.addEventListener('click', () => {
+  let containerList = document.getElementById('containerList');
+  containerList.style.float = 'left';
+  container_form.style.float = 'left';
 
-  const addTask = document.getElementById('add_task');
-  addTask.addEventListener('click', () => {
-    container_textarea.style.display = 'block';
-    list_task.style.display = 'block';
-    add_task.style.display = 'none';
+  let listName = document.getElementById('listTitle').value;
+  listName.value = '';
+  let listTitle = document.createTextNode(listName);
+  let containerTask = document.createElement('div');
+  containerTask.setAttribute('class', 'containerTask');
+  let taskTitle = document.createElement('p');
+  taskTitle.setAttribute('class', 'nameList');
+  let containerA = document.createElement('div');
+  let linkAddTask = document.createElement('a');
+  let iconAdd = document.createElement('i');
+  iconAdd.setAttribute('class', 'fas fa-plus');
+  linkAddTask.setAttribute('class', 'AddTask');
+  let textAddTask = document.createTextNode(' Añada una tarjeta');
+  linkAddTask.appendChild(iconAdd);
+  linkAddTask.appendChild(textAddTask);
+  linkAddTask.title = '  Añadir una tarjeta';
+  linkAddTask.href = '#';
+  containerA.appendChild(linkAddTask);
+  taskTitle.appendChild(listTitle);
+  containerTask.appendChild(taskTitle);
+  containerTask.appendChild(containerA);
 
-    const addTitleTask = document.getElementById('btn_añadir');
-    addTitleTask.addEventListener('click', () => {
-      focus(task);
-      let text = document.getElementById('task').value;
-      task.value = '';
+  contenedor.insertBefore(containerTask, containerList);
+  
+  linkAddTask.addEventListener('click', () => {
+    
+    let divTextArea = document.createElement('div');
+    let textarea = document.createElement('textarea');
+    textarea.setAttribute('class', 'textarea');
+    textarea.setAttribute('placeholder', 'Introduzca un título para esta tarjeta...');
+    let btnAddCard = document.createElement('button');
+    btnAddCard.setAttribute('class', 'btn btn-success btnAddCard');
+    let pTextBtnAddCard = document.createElement('p');
+    pTextBtnAddCard.setAttribute('class', 'pTextBtnAddCard');
+    let textBtnAddCard = document.createTextNode('Añadir tarjeta');
+    let closeIcon = document.createElement('i');
+    closeIcon.setAttribute('class', 'fas fa-times');
+    pTextBtnAddCard.appendChild(textBtnAddCard);
+    btnAddCard.appendChild(pTextBtnAddCard);
+    containerTask.appendChild(textarea);
+    containerTask.appendChild(btnAddCard);
+    containerTask.appendChild(closeIcon);
+    containerTask.removeChild(containerA);
+
+    btnAddCard.addEventListener('click', () => {
       let newDiv = document.createElement('div');
-      newDiv.setAttribute('id', 'cajaText');
-      let newTask = document.createTextNode(text);
+      newDiv.setAttribute('class', 'newDiv');
+      let valueTextArea = textarea.value;
+      textarea.value = '';
+      let newTask = document.createTextNode(valueTextArea);
       newDiv.appendChild(newTask);
-      let containerElements = document.getElementById('list_task');
-      containerElements.appendChild(newDiv);
+      containerTask.appendChild(newDiv);
+      containerTask.insertBefore(newDiv, textarea);
+
     })
+    
   })
+
+
 })
 
