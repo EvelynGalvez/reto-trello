@@ -71,11 +71,7 @@ btnAddList.addEventListener('click', () => {
       newDiv.appendChild(newTask);
       containerTask.appendChild(newDiv);
       containerTask.insertBefore(newDiv, textarea);
-
     })
-    
   })
-
-
 })
 
