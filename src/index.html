@@ -16,7 +16,6 @@
       <button id="btn_tablero" type="button" class="btn btn-primary btns_barra"><i class="fab fa-trello"></i>&nbsp&nbsp Tableros</button>
       <button id="btn_search" type="button" class="btn btn-primary btns_barra"><i class="fas fa-search fa-rotate-90"></i></button>
       <img src="../assets/logotrello.png" class="logo">
-          <!-- <a id="title_trello" href="#"><i class="fab fa-trello"></i>Trello</a> -->
       <div id="icons">
         <button id="btn_mas" type="button" class="btn btn-primary btns_barra"><i class="fas fa-plus"></i></button>
         <button id="btn_exclamation" type="button" class="btn btn-primary btns_barra"><i class="fas fa-exclamation-circle fa-rotate-180"></i></button>
@@ -37,10 +36,10 @@
   
   <div class="container-fluid">
    
-    <div id="contenedor" class="row">
-    
+    <div id="contenedor">
+      <div id="containerCards" class="containerCards"></div>
       <div id="containerList" class="containerList">
-        <button id="btn_add_a_list" type="button" class="btnAddAList btn btn-primary"><i class="fas fa-plus"></i>&nbsp Añada una lista...</button>
+        <button onclick="AddList()" id="btn_add_a_list" type="button" class="btnAddAList btn btn-primary"><i onclick="close()" class="fas fa-plus"></i>&nbsp Añada una lista...</button>
             
               <div id="container_form" class="containerForm">
                 <input type="text" class="form-control" id="listTitle" placeholder="Introduzca el título de la lista...">

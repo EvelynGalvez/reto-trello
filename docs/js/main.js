@@ -1,24 +1,32 @@
-const btn_add_a_list = document.getElementById('btn_add_a_list');
+//const btn_add_a_list = document.getElementById('btn_add_a_list');
 
-btn_add_a_list.addEventListener('click', () => {
+// Para mostrar formulario ingreso nombre de lista y ocultar botón de 'Añadir una lista'
+container_form.style.display = 'none';
+function AddList() {
   btn_add_a_list.style.display = 'none';
-  container_form.style.display = 'block';
+  container_form.style.display = 'inline-block';
 
   // Para cerrar formulario de título lista
   close_icon.addEventListener('click', () => {
     container_form.style.display = 'none';
-    btn_add_a_list.style.display = 'block';
+    btn_add_a_list.style.display = 'inline-block';
   })
-})
+}
+
 
 const btnAddList = document.getElementById('btnAddList');
 
 btnAddList.addEventListener('click', () => {
+  let containerCards = document.getElementById('containerCards');
   let containerList = document.getElementById('containerList');
+  let container_form = document.getElementById('container_form');
+  container_form.style.float = 'left';
   containerList.style.float = 'left';
+  containerCards.style.float = 'left';
   container_form.style.float = 'left';
 
   let listName = document.getElementById('listTitle').value;
+  document.getElementById('listTitle').value = '';
   listName.value = '';
   let listTitle = document.createTextNode(listName);
   let containerTask = document.createElement('div');
@@ -26,6 +34,7 @@ btnAddList.addEventListener('click', () => {
   let taskTitle = document.createElement('p');
   taskTitle.setAttribute('class', 'nameList');
   let containerA = document.createElement('div');
+  containerA.setAttribute('class', 'containerA');
   let linkAddTask = document.createElement('a');
   let iconAdd = document.createElement('i');
   iconAdd.setAttribute('class', 'fas fa-plus');
@@ -39,11 +48,11 @@ btnAddList.addEventListener('click', () => {
   taskTitle.appendChild(listTitle);
   containerTask.appendChild(taskTitle);
   containerTask.appendChild(containerA);
+  containerCards.appendChild(containerTask);
 
-  contenedor.insertBefore(containerTask, containerList);
+  contenedor.insertBefore(containerTask, containerCards);
   
   linkAddTask.addEventListener('click', () => {
-    
     let divTextArea = document.createElement('div');
     let textarea = document.createElement('textarea');
     textarea.setAttribute('class', 'textarea');
@@ -57,25 +66,23 @@ btnAddList.addEventListener('click', () => {
     closeIcon.setAttribute('class', 'fas fa-times');
     pTextBtnAddCard.appendChild(textBtnAddCard);
     btnAddCard.appendChild(pTextBtnAddCard);
-    containerTask.appendChild(textarea);
-    containerTask.appendChild(btnAddCard);
-    containerTask.appendChild(closeIcon);
+    divTextArea.appendChild(textarea);
+    divTextArea.appendChild(btnAddCard);
+    divTextArea.appendChild(closeIcon);
+    containerTask.appendChild(divTextArea);
     containerTask.removeChild(containerA);
 
     btnAddCard.addEventListener('click', () => {
-      let newDiv = document.createElement('div');
-      newDiv.setAttribute('class', 'newDiv');
       let valueTextArea = textarea.value;
       textarea.value = '';
       let newTask = document.createTextNode(valueTextArea);
+      let newDiv = document.createElement('div');
+      newDiv.setAttribute('class', 'newDiv');
       newDiv.appendChild(newTask);
       containerTask.appendChild(newDiv);
-      containerTask.insertBefore(newDiv, textarea);
-
+      containerTask.insertBefore(newDiv, divTextArea);
     })
-    
   })
-
-
+  contenedor.insertBefore(containerCards, containerList);
 })
 
