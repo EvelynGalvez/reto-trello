@@ -20,10 +20,10 @@ btnAddList.addEventListener('click', () => {
   let containerCards = document.getElementById('containerCards');
   let containerList = document.getElementById('containerList');
   let container_form = document.getElementById('container_form');
-  container_form.style.float = 'left';
-  containerList.style.float = 'left';
-  containerCards.style.float = 'left';
-  container_form.style.float = 'left';
+  container_form.style.float = 'inline-block';
+  containerList.style.float = 'inline-block';
+  containerCards.style.float = 'inline-block';
+  //container_form.style.float = 'left';
 
   let listName = document.getElementById('listTitle').value;
   document.getElementById('listTitle').value = '';
