@@ -84,6 +84,23 @@ header {
   margin-right: -3px;
 }
 
+.foto-user-trello:hover {
+  filter: opacity(0.8);
+}
+
+.right {
+  position: relative;
+  left: 62%;
+  font-size: 14px;
+}
+
+.mostrar-menu {
+  text-decoration: underline;
+  position: relative;
+  top: 3px;
+  margin-left: 3px;
+}
+
 .btn_home {
   margin-left: 0.2%;
   width: 33px;
@@ -91,10 +108,6 @@ header {
   text-align: center;
   padding-left: 8px;
 }
-/*
-.logo:hover {
-  filter: opacity(80%);
-}*/
 
 .fa-search {
   float: right;
@@ -103,19 +116,13 @@ header {
 }
 
 #btn_mas {
-  margin-top: 0.2%;
   width: 30px;
   height: 31px;
   padding-left: 8px;
   margin-right: 0px;
 }
 
-#btn_mas:hover {
-  background-color: rgba(63, 144, 194, 0.788);
-}
-
 #btn_exclamation {
-  margin-top: 0.2%;
   margin-left: 0%;
   width: 31px;
   height: 31px;
@@ -123,7 +130,6 @@ header {
 }
 
 #btn_bell {
-  margin-top: 0.2%;
   margin-left: 0%;
   margin-right: -5%;
   width: 31px;
@@ -144,10 +150,18 @@ header {
 
 #icons {
   float: right;
-  margin-top: -0.5%;
+  margin-top: 0.25%;
   margin-right: 0.2%;
 }
 
+.foto-user-trello-icons {
+  width: 38px;
+  height: 34px;
+  position: relative;
+  top: 0px;
+  margin-right: -9px;
+  margin-left: 4px;
+}
 .containerForm {
   width: 100%;
   margin-left: 0px;
