@@ -77,6 +77,14 @@ header {
 .logo:hover {
   filter: opacity(75%);
 } 
+
+.foto-user-trello {
+  width: 38px;
+  height: 34px;
+  position: relative;
+  top: -5px;
+  margin-right: -3px;
+}
 /*
 .logo:hover {
   filter: opacity(80%);
