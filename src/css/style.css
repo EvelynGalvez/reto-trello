@@ -24,24 +24,23 @@ header {
   background-color: rgb(85, 156, 201);
   height: 31px;
   border: none;
-  border-radius: 6%;
-  margin-top: 0.4%;
+  border-radius: 3px;
+  margin-top: 0.25%;
+  margin-bottom: 0.25%;
 }
 
 #btn_tablero {
-  margin-left: 0.3%;
-  margin-top: 0.4%;
-  margin-bottom: 0.1%;
+  margin-left: 0.5px;
   font-size: 90%;
-  width: 9%;
-  padding-right: 8px;
+  width: 6.7%;
+  padding-right: 5px;
   font-weight: bold;
   text-align: left;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-#btn_tablero:hover {
+.hover_barra:hover {
   background-color: rgba(63, 144, 194, 0.788);
 }
 
@@ -51,9 +50,8 @@ header {
 }
 
 #btn_search {
-  margin-bottom: 0.1%;
   padding-bottom: 26px;
-  width: 16%;
+  width: 11.5%;
   text-align: right;
   font-size: 115%;
 }
@@ -84,6 +82,14 @@ header {
   position: relative;
   top: -5px;
   margin-right: -3px;
+}
+
+.btn_home {
+  margin-left: 0.2%;
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  padding-left: 8px;
 }
 /*
 .logo:hover {
