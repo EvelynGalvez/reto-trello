@@ -73,6 +73,10 @@ header {
   border: none;
   outline: none;
 }
+
+.logo:hover {
+  filter: opacity(75%);
+} 
 /*
 .logo:hover {
   filter: opacity(80%);
