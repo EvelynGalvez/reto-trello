@@ -1,4 +1,4 @@
-## Réplica Trello
+# Réplica Trello
 
 Proyecto para Laboratoria conisistente en replicar lo más fielmente posible un tablero de Trello.
 
