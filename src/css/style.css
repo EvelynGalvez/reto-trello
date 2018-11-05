@@ -24,24 +24,23 @@ header {
   background-color: rgb(85, 156, 201);
   height: 31px;
   border: none;
-  border-radius: 6%;
-  margin-top: 0.4%;
+  border-radius: 3px;
+  margin-top: 0.25%;
+  margin-bottom: 0.25%;
 }
 
 #btn_tablero {
-  margin-left: 0.3%;
-  margin-top: 0.4%;
-  margin-bottom: 0.1%;
+  margin-left: 0.5px;
   font-size: 90%;
-  width: 9%;
-  padding-right: 8px;
+  width: 6.7%;
+  padding-right: 5px;
   font-weight: bold;
   text-align: left;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-#btn_tablero:hover {
+.hover_barra:hover {
   background-color: rgba(63, 144, 194, 0.788);
 }
 
@@ -51,9 +50,8 @@ header {
 }
 
 #btn_search {
-  margin-bottom: 0.1%;
   padding-bottom: 26px;
-  width: 16%;
+  width: 11.5%;
   text-align: right;
   font-size: 115%;
 }
@@ -63,18 +61,53 @@ header {
 }
 
 .logo {
-  height: 25px;
+  height: 24px;
   width: auto;
-  filter: opacity(65%);
-  display: inline-block;
+  filter: opacity(55%);
+  position:absolute;
+  left: 47.5%;
+  top:1%;
   background-color: rgb(0, 104, 164);
   border: none;
   outline: none;
 }
-/*
+
 .logo:hover {
-  filter: opacity(80%);
-}*/
+  filter: opacity(75%);
+} 
+
+.foto-user-trello {
+  width: 38px;
+  height: 34px;
+  position: relative;
+  top: -5px;
+  margin-right: -3px;
+}
+
+.foto-user-trello:hover {
+  filter: opacity(0.8);
+}
+
+.right {
+  position: relative;
+  left: 62%;
+  font-size: 14px;
+}
+
+.mostrar-menu {
+  text-decoration: underline;
+  position: relative;
+  top: 3px;
+  margin-left: 3px;
+}
+
+.btn_home {
+  margin-left: 0.2%;
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  padding-left: 8px;
+}
 
 .fa-search {
   float: right;
@@ -83,19 +116,13 @@ header {
 }
 
 #btn_mas {
-  margin-top: 0.2%;
   width: 30px;
   height: 31px;
   padding-left: 8px;
   margin-right: 0px;
 }
 
-#btn_mas:hover {
-  background-color: rgba(63, 144, 194, 0.788);
-}
-
 #btn_exclamation {
-  margin-top: 0.2%;
   margin-left: 0%;
   width: 31px;
   height: 31px;
@@ -103,7 +130,6 @@ header {
 }
 
 #btn_bell {
-  margin-top: 0.2%;
   margin-left: 0%;
   margin-right: -5%;
   width: 31px;
@@ -124,10 +150,18 @@ header {
 
 #icons {
   float: right;
-  margin-top: -0.5%;
+  margin-top: 0.25%;
   margin-right: 0.2%;
 }
 
+.foto-user-trello-icons {
+  width: 38px;
+  height: 34px;
+  position: relative;
+  top: 0px;
+  margin-right: -9px;
+  margin-left: 4px;
+}
 .containerForm {
   width: 100%;
   margin-left: 0px;
